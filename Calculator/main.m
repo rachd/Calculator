@@ -14,15 +14,12 @@ int main () {
     Fraction *aFraction = [[Fraction alloc] init];
     Fraction *bFraction = [[Fraction alloc] init];
     
-    [aFraction setNumerator:1 overDenominator:2];
+    [aFraction setNumerator:2 overDenominator:4];
     [bFraction setNumerator:1 overDenominator:3];
     
+    [aFraction display]; NSLog(@" + "); [bFraction display]; NSLog(@" = ");
+    [aFraction add:bFraction];
+    [aFraction reduce];
     [aFraction display];
-    NSLog(@" / ");
-    [bFraction display];
-    NSLog(@" = ");
-    [aFraction divide:bFraction];
-    [aFraction display];
-    
     return 0;
 }

@@ -22,5 +22,6 @@
 - (void)subtract:(Fraction *)subFraction;
 - (void)multiply:(Fraction *)multFraction;
 - (void)divide:(Fraction *)divFraction;
+- (void)reduce;
 
 @end
