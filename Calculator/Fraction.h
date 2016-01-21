@@ -24,4 +24,10 @@
 - (void)divide:(Fraction *)divFraction;
 - (void)reduce;
 
++ (Fraction *)addFraction:(Fraction *)frac1 toFraction:(Fraction *)frac2;
++ (Fraction *)subtractFraction:(Fraction *)frac1 toFraction:(Fraction *)frac2;
++ (Fraction *)multiplyFraction:(Fraction *)frac1 toFraction:(Fraction *)frac2;
++ (Fraction *)divideFraction:(Fraction *)frac1 toFraction:(Fraction *)frac2;
+
+
 @end
