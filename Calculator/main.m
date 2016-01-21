@@ -2,15 +2,20 @@
 //  main.m
 //  Calculator
 //
-//  Created by Rachel Dorn on 1/7/16.
+//  Created by Rachel Dorn on 1/19/16.
 //  Copyright © 2016 Rachel Dorn. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+#import <Foundation/Foundation.h>
+#import "Fraction.h"
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
-    }
+int main () {
+    
+    Fraction *myFraction = [[Fraction alloc]init];
+    
+    [myFraction setNumerator:2 overDenominator:5];
+    NSLog(@"myFraction has a value of: ");
+    [myFraction display];
+    
+    return 0;
 }

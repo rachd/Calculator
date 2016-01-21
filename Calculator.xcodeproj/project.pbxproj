@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC7695ED1C4056C400507B96 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = CC7695EC1C4056C400507B96 /* Fraction.m */; };
+		CC9982081C4F35B500DCA553 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9982071C4F35B500DCA553 /* main.m */; };
 		CCFA6D581C3F10AA005FB7CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFA6D571C3F10AA005FB7CA /* main.m */; };
 		CCFA6D5B1C3F10AA005FB7CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFA6D5A1C3F10AA005FB7CA /* AppDelegate.m */; };
 		CCFA6D5E1C3F10AA005FB7CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFA6D5D1C3F10AA005FB7CA /* ViewController.m */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC7695EB1C4056C400507B96 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		CC7695EC1C4056C400507B96 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		CC9982071C4F35B500DCA553 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCFA6D531C3F10AA005FB7CA /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFA6D571C3F10AA005FB7CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCFA6D591C3F10AA005FB7CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +108,9 @@
 			children = (
 				CCFA6D591C3F10AA005FB7CA /* AppDelegate.h */,
 				CCFA6D5A1C3F10AA005FB7CA /* AppDelegate.m */,
+				CC7695EB1C4056C400507B96 /* Fraction.h */,
+				CC9982071C4F35B500DCA553 /* main.m */,
+				CC7695EC1C4056C400507B96 /* Fraction.m */,
 				CCFA6D5C1C3F10AA005FB7CA /* ViewController.h */,
 				CCFA6D5D1C3F10AA005FB7CA /* ViewController.m */,
 				CCFA6D5F1C3F10AA005FB7CA /* Main.storyboard */,
@@ -270,9 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9982081C4F35B500DCA553 /* main.m in Sources */,
 				CCFA6D5E1C3F10AA005FB7CA /* ViewController.m in Sources */,
 				CCFA6D5B1C3F10AA005FB7CA /* AppDelegate.m in Sources */,
 				CCFA6D581C3F10AA005FB7CA /* main.m in Sources */,
+				CC7695ED1C4056C400507B96 /* Fraction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +508,7 @@
 				CCFA6D821C3F10AA005FB7CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCFA6D831C3F10AA005FB7CA /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +517,7 @@
 				CCFA6D851C3F10AA005FB7CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCFA6D861C3F10AA005FB7CA /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +526,7 @@
 				CCFA6D881C3F10AA005FB7CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
