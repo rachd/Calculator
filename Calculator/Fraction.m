@@ -23,9 +23,24 @@
 }
 
 
-- (void)add:(Fraction *)newFraction {
-    self.numerator = self.numerator * newFraction.denominator + self.denominator * newFraction.numerator;
-    self.denominator = self.denominator * newFraction.denominator;
+- (void)add:(Fraction *)addFraction {
+    self.numerator = self.numerator * addFraction.denominator + self.denominator * addFraction.numerator;
+    self.denominator = self.denominator * addFraction.denominator;
+}
+
+- (void)subtract:(Fraction *)subFraction {
+    self.numerator = self.numerator * subFraction.denominator - self.denominator * subFraction.numerator;
+    self.denominator = self.denominator * subFraction.denominator;
+}
+
+- (void)multiply:(Fraction *)multFraction {
+    self.numerator = self.numerator * multFraction.numerator;
+    self.denominator = self.denominator * multFraction.denominator;
+}
+
+- (void)divide:(Fraction *)divFraction {
+    self.numerator = self.numerator * divFraction.denominator;
+    self.denominator = self.denominator * divFraction.numerator;
 }
 
 @end

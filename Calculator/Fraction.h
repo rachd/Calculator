@@ -18,6 +18,9 @@
 
 - (void)display;
 - (void)setNumerator:(NSInteger)num overDenominator:(NSInteger)denom;
-- (void)add:(Fraction *)newFraction;
+- (void)add:(Fraction *)addFraction;
+- (void)subtract:(Fraction *)subFraction;
+- (void)multiply:(Fraction *)multFraction;
+- (void)divide:(Fraction *)divFraction;
 
 @end

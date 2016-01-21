@@ -18,10 +18,10 @@ int main () {
     [bFraction setNumerator:1 overDenominator:3];
     
     [aFraction display];
-    NSLog(@" + ");
+    NSLog(@" / ");
     [bFraction display];
     NSLog(@" = ");
-    [aFraction add:bFraction];
+    [aFraction divide:bFraction];
     [aFraction display];
     
     return 0;
