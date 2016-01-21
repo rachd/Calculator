@@ -21,4 +21,11 @@
     self.numerator = num;
     self.denominator = denom;
 }
+
+
+- (void)add:(Fraction *)newFraction {
+    self.numerator = self.numerator * newFraction.denominator + self.denominator * newFraction.numerator;
+    self.denominator = self.denominator * newFraction.denominator;
+}
+
 @end

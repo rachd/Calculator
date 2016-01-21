@@ -11,11 +11,18 @@
 
 int main () {
     
-    Fraction *myFraction = [[Fraction alloc]init];
+    Fraction *aFraction = [[Fraction alloc] init];
+    Fraction *bFraction = [[Fraction alloc] init];
     
-    [myFraction setNumerator:2 overDenominator:5];
-    NSLog(@"myFraction has a value of: ");
-    [myFraction display];
+    [aFraction setNumerator:1 overDenominator:2];
+    [bFraction setNumerator:1 overDenominator:3];
+    
+    [aFraction display];
+    NSLog(@" + ");
+    [bFraction display];
+    NSLog(@" = ");
+    [aFraction add:bFraction];
+    [aFraction display];
     
     return 0;
 }
