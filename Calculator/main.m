@@ -19,7 +19,6 @@ int main () {
     
     [aFraction display]; NSLog(@" + "); [bFraction display]; NSLog(@" = ");
     [aFraction add:bFraction];
-    [aFraction reduce];
     [aFraction display];
     return 0;
 }
