@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Fraction.h"
+#import "MixedNumber.h"
 
 int main () {
     
@@ -29,5 +30,17 @@ int main () {
     Fraction *classDiv = [Fraction divideFraction:aFraction toFraction:bFraction];
     [classDiv display];
     
+    MixedNumber *aMixedNum = [[MixedNumber alloc] init];
+    MixedNumber *bMixedNum = [[MixedNumber alloc] init];
+    [aMixedNum setWholeNumber:3 andNumerator:2 overDenominator:4];
+    [bMixedNum setWholeNumber:4 andFraction:bFraction];
+    
+    NSLog(@"aMixedNum is"); [aMixedNum display];
+    // Uses Fraction's reduce method on the fractional portion of MixedNumber
+    NSLog(@"After reducing, aMixedNum is"); [aMixedNum reduce]; [aMixedNum display];
+    
+    NSLog(@"Addition: ");
+    [aMixedNum display]; NSLog(@" + "); [bMixedNum display]; NSLog(@" = ");
+    [[MixedNumber addMixedNumber:aMixedNum toMixedNumber:bMixedNum] display];
     return 0;
 }
